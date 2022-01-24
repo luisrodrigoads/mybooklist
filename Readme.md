@@ -27,7 +27,7 @@ Rodar o seguinte comando para iniciar as migrations.
 
 ## Instalação
 
-No diretório "mybookweb" rodar
+No diretório "mybooklistweb" rodar
 
 ### `npm install`
 

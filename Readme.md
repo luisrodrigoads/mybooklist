@@ -23,6 +23,10 @@ Rodar o seguinte comando para iniciar as migrations.
 
 ### `adonis migration:run`
 
+Para executar a aplicação backend 
+
+### `adonis serve --dev`
+
 # React web app
 
 ## Instalação

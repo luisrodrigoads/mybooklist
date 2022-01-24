@@ -31,7 +31,7 @@ export default function InitialPage(){
             })
     }
 
-    const addFavoriteBookToApi = (id, title, description, imgBook, authors, isbn) => {
+    const addFavoriteBookToApi = (id, title, description, imgBook, authors) => {
         let newBook = {
             idBook: id,
             title: title,

@@ -2,15 +2,20 @@ import {ButtonsList} from '../styles/styles';
 import Modal from '../components/Modal';
 import { useState } from 'react';
 
-export default function ItemBookList({item, addFavoriteBookToApi}){
+export default function ItemBookList({isFavorite, item, addFavoriteBookToApi, deleteFavoriteBook}){
 
     const [showModal, setShowModal] =  useState(false);
 
     return(
         <>
         <tr>
-        <td><img alt="" src={`http://books.google.com/books/content?id=is06DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api`} /></td>
-        <td>{`nome do livro ${item}`}</td>
+        <td>{
+          isFavorite ? 
+          <img style={{width: '250px',height: '250px'}} alt="" src={item.imgBook} />
+          :
+          <img alt="" src={isFavorite ? item.imgBook : item.volumeInfo.imageLinks.smallThumbnail} />  
+        }</td>
+        <td>{isFavorite ? item.title : item.volumeInfo.title}</td>
         <td>
             <ButtonsList>
                 <button onClick={()=>setShowModal(true)} style={{ backgroundColor: "#2C394B"}}>
@@ -21,7 +26,7 @@ export default function ItemBookList({item, addFavoriteBookToApi}){
         </tr>
         {   
             showModal ?
-                <Modal title={`nome do livro ${item}`} setShowModal={setShowModal} addFavoriteBookToApi={addFavoriteBookToApi} />
+                <Modal isFavorite={isFavorite} item={item} setShowModal={setShowModal} addFavoriteBookToApi={addFavoriteBookToApi} deleteFavoriteBook={deleteFavoriteBook}/>
             : null
         }
         </>

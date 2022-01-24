@@ -7,11 +7,11 @@ class BookSchema extends Schema {
   up () {
     this.create('books', (table) => {
       table.increments()
-      table.string('idBook').notNullable()
-      table.string('title').notNullable()
-      table.string('imgBook').notNullable()
-      table.string('authors').notNullable()
-      table.string('isbn').notNullable()
+      table.string('idBook')
+      table.string('title')
+      table.string('description')
+      table.string('imgBook')
+      table.string('authors')
       table.timestamps()
     })
   }

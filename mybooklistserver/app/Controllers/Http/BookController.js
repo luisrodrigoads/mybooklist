@@ -8,7 +8,7 @@
  * Resourceful controller for interacting with books
  */
 
-const Book = use("App/Models/book");
+const Book = use("App/Models/Book");
 
 class BookController {
   /**
@@ -48,7 +48,7 @@ class BookController {
    */
   async store ({ request, response }) {
 
-    const data = request.only(["idBook","title","imgBook","authors","isbn"])
+    const data = request.only(["idBook","title","description","imgBook","authors"])
 
     const book = await Book.create(data);
 

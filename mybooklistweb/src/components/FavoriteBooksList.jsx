@@ -1,5 +1,7 @@
-export default function FavoriteBooksList({favoriteBooks,deleteFavoriteBook}){
+import BookList from "./BookList";
+
+export default function FavoriteBooksList({favoriteBooks, deleteFavoriteBook}){
     return(
-        <p>favorite books</p>
+        <BookList isFavorite={true} books={favoriteBooks} deleteFavoriteBook={deleteFavoriteBook} />
     );
 }

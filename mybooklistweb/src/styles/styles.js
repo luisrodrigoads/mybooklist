@@ -102,7 +102,6 @@ export const FavoritesTitleContainer = styled.div`
     justify-content: center;
     margin-top: 1.8rem;
     width: 100%;
-    border-bottom: 1px solid grey;
     padding-bottom: 0.6rem;
 
     p{
@@ -142,4 +141,25 @@ export const ModalContainer = styled.div`
         filter: opacity(60%);
         cursor: pointer;
     }
+
+    img{
+        margin: 0.5rem;
+    }
+
+    h2{
+        padding-left: 0.4rem;
+        margin-top: 0.4rem;
+    }
+
+    h3{
+        margin-bottom: 0.4rem;
+        padding-left: 0.4rem;
+    }
+
+    p{
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+
 `;

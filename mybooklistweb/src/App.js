@@ -1,10 +1,8 @@
-import './App.css';
+import InitialPage from "./pages/InitialPage";
 
 function App() {
   return (
-    <div className="App">
-      <p>hello world</p>
-    </div>
+    <InitialPage />
   );
 }
 

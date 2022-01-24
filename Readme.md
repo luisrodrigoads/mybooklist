@@ -1,8 +1,8 @@
 # My Book List
 
-<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image2.png" width="350" title="Project image">
-<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image3.png" width="350" title="Project image">
-<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image4.png" width="350" title="Project image">
+<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image2.png" width="300" title="Project image">
+<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image3.png" width="300" title="Project image">
+<img src="https://github.com/luisrodrigoads/mybooklist/blob/main/image4.png" width="300" title="Project image">
 
 # Adonis API 
 
